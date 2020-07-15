@@ -180,3 +180,7 @@ var updateVh = function () {
 addEventListener('resize', updateVh);
 // Run On Page Load
 updateVh();
+// Hide Address Bar
+setTimeout(function () {
+    scrollTo(0, 1);
+}, 0);

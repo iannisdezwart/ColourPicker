@@ -255,3 +255,9 @@ addEventListener('resize', updateVh)
 // Run On Page Load
 
 updateVh()
+
+// Hide Address Bar
+
+setTimeout(() => {
+	scrollTo(0, 1)
+}, 0)
