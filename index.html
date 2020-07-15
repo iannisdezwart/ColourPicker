@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Colour Picker</title>
+		<script defer src="js/index.js" charset="utf-8"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div id="colour-box"></div>
+
+		<div id="controls">
+			<h1 id="title">Foreground</h1>
+			<img id="change-icon" title="Change" src="img/change.png" alt="change" onclick="toggleMode()">
+
+			<div class="red-slider">
+				<input type="range" min="0" max="255" id="red">
+			</div>
+			<div class="green-slider">
+				<input type="range" min="0" max="255" id="green">
+			</div>
+			<div class="blue-slider">
+				<input type="range" min="0" max="255" id="blue">
+			</div>
+
+			<br>
+
+			<div class="info">
+				<div class="input">
+					<p class="label">RGB</p>
+					<input type="text" id="rgb">
+				</div>
+				<div class="input">
+					<p class="label">HEX</p>
+					<input type="text" id="hex">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
