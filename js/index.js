@@ -172,3 +172,11 @@ blueSlider.addEventListener('input', updateColour);
 blueSlider.addEventListener('wheel', handleSliderScroll);
 rgbInput.addEventListener('change', handleRgbChange);
 hexInput.addEventListener('change', handleHexChange);
+// Mobile Actual Viewport Height
+var updateVh = function () {
+    document.body.style.setProperty('--vh', innerHeight + "px");
+};
+// Update Viewport Height On Resize
+addEventListener('resize', updateVh);
+// Run On Page Load
+updateVh();
